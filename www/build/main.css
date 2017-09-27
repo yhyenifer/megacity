@@ -20142,13 +20142,13 @@ page-home-admin .boton {
   }
 }
 
-@media (max-width: 450px) and (min-width: 340px) {
+@media (max-width: 490px) and (min-width: 340px) {
   page-home-admin .lista {
     margin-top: 0em;
     margin-left: 0em;
   }
   page-home-admin .boton {
-    font-size: 31px;
+    font-size: 33px;
   }
 }
 
