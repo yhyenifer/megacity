@@ -132,7 +132,7 @@ var ValidarFacturasPage = (function () {
                                 estado: _this.factura.estado,
                                 valor: _this.valor
                             });
-                            _this.puntosacum = Number(_this.puntosacum) + Number(_this.valor / 1000);
+                            _this.puntosacum = Number(_this.puntosacum) + Number(Math.floor(_this.valor / 1000));
                             _this.infoPerfil$.update(_this.factura.uid, {
                                 puntos: _this.puntosacum
                             });
