@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 466:
+/***/ 481:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValidarFacturasPageModule", function() { return ValidarFacturasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validar_facturas__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validar_facturas__ = __webpack_require__(506);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ ValidarFacturasPageModule = __decorate([
 
 /***/ }),
 
-/***/ 476:
+/***/ 506:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,6 +80,7 @@ var ValidarFacturasPage = (function () {
         this.database = database;
         this.alertCtrl = alertCtrl;
         this.storage = storage;
+        this.cc = {};
         var storageRef = __WEBPACK_IMPORTED_MODULE_5_firebase___default.a.storage().ref();
         this.infoFactura$ = this.database.list('factura');
         this.infoPerfil$ = this.database.list('perfil');
@@ -97,6 +98,12 @@ var ValidarFacturasPage = (function () {
         var imageRef = storageRef.child(this.url);
         imageRef.getDownloadURL().then(function (url) {
             return _this.base64Image = url;
+        });
+        this.database.list('CentroComercial').subscribe(function (_data) {
+            _this.politica = _data;
+            //console.log(this.politica[0].factorpuntos);
+            _this.factor = _this.politica[0].factorpuntos;
+            console.log(_this.factor);
         });
         this.puntosacum = 0;
     }
@@ -126,9 +133,6 @@ var ValidarFacturasPage = (function () {
                         role: 'si',
                         handler: function () {
                             console.log('si');
-                            // va el codigo que debe actualizar el estado de la 
-                            //factura  a "aprobada" y sumar los puntos al cliente 
-                            //y enviar notificacion
                             // se decide que por cada 1000 pesos de valor de la 
                             //factura se ortoga 1 punto al cliente
                             _this.factura.estado = 'Aprobada';
@@ -136,7 +140,7 @@ var ValidarFacturasPage = (function () {
                                 estado: _this.factura.estado,
                                 valor: _this.valor
                             });
-                            _this.puntosacum = Number(_this.puntosacum) + Number(Math.floor(_this.valor / 1000));
+                            _this.puntosacum = Number(_this.puntosacum) + Number(Math.floor(_this.valor / _this.factor));
                             _this.contador = Number(_this.contador) + 1;
                             _this.infoPerfil$.update(_this.factura.uid, {
                                 puntos: _this.puntosacum,

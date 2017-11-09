@@ -1,14 +1,14 @@
 webpackJsonp([8],{
 
-/***/ 459:
+/***/ 474:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacturasAprobadasPageModule", function() { return FacturasAprobadasPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListaEventosPageModule", function() { return ListaEventosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facturas_aprobadas__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lista_eventos__ = __webpack_require__(499);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FacturasAprobadasPageModule = (function () {
-    function FacturasAprobadasPageModule() {
+var ListaEventosPageModule = (function () {
+    function ListaEventosPageModule() {
     }
-    return FacturasAprobadasPageModule;
+    return ListaEventosPageModule;
 }());
-FacturasAprobadasPageModule = __decorate([
+ListaEventosPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__facturas_aprobadas__["a" /* FacturasAprobadasPage */],
+            __WEBPACK_IMPORTED_MODULE_2__lista_eventos__["a" /* ListaEventosPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facturas_aprobadas__["a" /* FacturasAprobadasPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__lista_eventos__["a" /* ListaEventosPage */]),
         ],
     })
-], FacturasAprobadasPageModule);
+], ListaEventosPageModule);
 
-//# sourceMappingURL=facturas-aprobadas.module.js.map
+//# sourceMappingURL=lista-eventos.module.js.map
 
 /***/ }),
 
-/***/ 469:
+/***/ 499:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacturasAprobadasPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaEventosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(87);
@@ -59,54 +59,54 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the FacturasAprobadasPage page.
+ * Generated class for the ListaEventosPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FacturasAprobadasPage = (function () {
-    function FacturasAprobadasPage(navCtrl, navParams, menu, database) {
+var ListaEventosPage = (function () {
+    function ListaEventosPage(navCtrl, navParams, menu, database) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.menu = menu;
         this.database = database;
+        this.evento = {};
         this.menu1Active();
-        this.facturas$ = this.database.list('/factura', {
-            query: {
-                orderByChild: 'estado',
-                equalTo: 'Aprobada'
-            }
-        }).map(function (array) { return array.reverse(); });
+        this.eventos$ = this.database.list('eventos');
+        this.eventos = [];
     }
-    FacturasAprobadasPage.prototype.menu1Active = function () {
+    ListaEventosPage.prototype.menu1Active = function () {
         this.menu.enable(true, 'menu2');
         this.menu.enable(false, 'menu1');
     };
-    FacturasAprobadasPage.prototype.ionViewDidLoad = function () {
+    ListaEventosPage.prototype.ionViewDidLoad = function () {
     };
-    FacturasAprobadasPage.prototype.openPage = function (page) {
-        this.navCtrl.setRoot(page);
-    };
-    FacturasAprobadasPage.prototype.mostrarFactura = function (factura, facturaId) {
-        this.navCtrl.setRoot('DetalleFacturaPage', {
-            factura: factura,
-            id: facturaId
+    // este es para el editar, falta enviar parametros
+    ListaEventosPage.prototype.mostrarEvento = function (evento, eventoId) {
+        this.navCtrl.setRoot('DetalleEventosPage', {
+            evento: evento,
+            id: eventoId,
+            accion: 1
         });
     };
-    return FacturasAprobadasPage;
+    ListaEventosPage.prototype.crearEvento = function () {
+        this.navCtrl.setRoot('DetalleEventosPage', {
+            accion: 2
+        });
+    };
+    return ListaEventosPage;
 }());
-FacturasAprobadasPage = __decorate([
+ListaEventosPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-facturas-aprobadas',template:/*ion-inline-start:"C:\Users\yenifer\Documents\uniquindio\SOFT2\Centro\src\pages\facturas-aprobadas\facturas-aprobadas.html"*/'<!--\n\n  Generated template for the FacturasPendientesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n    \n\n      <ion-navbar>\n\n        <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n          Facturas\n\n        </ion-title>\n\n      </ion-navbar>\n\n      <ion-navbar>\n\n        <ion-row>\n\n          <ion-col class="groupTabs">\n\n            <button class="tab tab1" (click)="openPage(\'FacturasPendientesPage\')">Pendientes</button>\n\n          </ion-col>\n\n          <ion-col class="groupTabs">\n\n            <button class="tab tab2" (click)="openPage(\'FacturasAprobadasPage\')"> Aprobadas</button>\n\n          </ion-col>\n\n          <ion-col class="">\n\n            <button class="tab tab3" (click)="openPage(\'FacturasDenegadasPage\')">Denegadas</button>\n\n          </ion-col>\n\n        </ion-row>\n\n       </ion-navbar>\n\n    \n\n    </ion-header>\n\n  \n\n  \n\n  <ion-content padding>\n\n  <ion-row>\n\n    <ion-col>\n\n      <!-- se deben mostrar las 20 facturas en estado aprobadas de  la mas reciente  a la mas antigua -->\n\n        <ion-list>\n\n          <button ion-item  *ngFor="let factura of facturas$ | async; let i = index" (click)="mostrarFactura(factura)">\n\n            <ion-icon name="document"></ion-icon> Factura {{i+1}} - {{ factura.estado }} - {{factura.almacen}} \n\n           </button>\n\n        \n\n                    \n\n          </ion-list>\n\n    </ion-col>\n\n    <ion-col>\n\n        <img class="adminVal" src="https://firebasestorage.googleapis.com/v0/b/tiendq-3d47a.appspot.com/o/img%2Fadmin%2Fvalidar.png?alt=media&token=3a31579e-ac19-42e4-bdd0-f35b1a24e1f5">      \n\n    </ion-col>\n\n  </ion-row>  \n\n    \n\n  </ion-content>\n\n  '/*ion-inline-end:"C:\Users\yenifer\Documents\uniquindio\SOFT2\Centro\src\pages\facturas-aprobadas\facturas-aprobadas.html"*/,
+        selector: 'page-lista-eventos',template:/*ion-inline-start:"C:\Users\yenifer\Documents\uniquindio\SOFT2\Centro\src\pages\lista-eventos\lista-eventos.html"*/'<!--\n\n  Generated template for the ListaEventosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n          </button>\n\n          <ion-row>\n\n              <ion-col>\n\n                <ion-title  class="titulo">Eventos</ion-title>\n\n   \n\n               </ion-col>\n\n              <ion-col>\n\n                <div class="izq" >\n\n                 <button id="new" (click)="crearEvento()" ><b>Crear Nuevo Evento <ion-icon name="add"></ion-icon></b></button>\n\n                </div>\n\n              </ion-col>\n\n          </ion-row>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-row>\n\n        <ion-col>\n\n            <!-- se deben mostrar los eventos en ordens cronologico, el mas proximo a realizar primero-->\n\n            <ion-list>\n\n                <button ion-item  *ngFor="let evento of eventos$ | async; let i = index" (click)="mostrarEvento(evento,evento.$key)">\n\n                  <ion-icon name="calendar"></ion-icon> {{evento.nombre}} \n\n                 </button>      \n\n                </ion-list>\n\n             \n\n        \n\n          </ion-col>\n\n          <ion-col class="imgEvento">\n\n              <img class="adminVal" src="https://firebasestorage.googleapis.com/v0/b/tiendq-3d47a.appspot.com/o/img%2Fadmin%2Feventos%20megacity.png?alt=media&token=4e43e539-25a1-4e22-a3c5-247a4268ed35">      \n\n          </ion-col>\n\n    </ion-row>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\yenifer\Documents\uniquindio\SOFT2\Centro\src\pages\lista-eventos\lista-eventos.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */],
         __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
-], FacturasAprobadasPage);
+], ListaEventosPage);
 
-//# sourceMappingURL=facturas-aprobadas.js.map
+//# sourceMappingURL=lista-eventos.js.map
 
 /***/ })
 

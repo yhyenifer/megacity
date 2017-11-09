@@ -19940,6 +19940,378 @@ ion-navbar.toolbar {
   margin-left: 1em;
 }
 
+page-almacen-detalle .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-almacen-detalle .text-center {
+  text-align: center;
+}
+
+page-almacen-detalle .gana {
+  max-width: 50%;
+}
+
+page-almacen-detalle .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-almacen-detalle .letra12 {
+  font-size: 12px;
+}
+
+page-almacen-detalle .row {
+  margin-bottom: 20px;
+}
+
+page-almacen-detalle .opciones {
+  text-align: center;
+}
+
+page-almacen-detalle .derecha {
+  text-align: right;
+}
+
+page-almacen-detalle .centro {
+  text-align: center;
+}
+
+page-almacen-detalle .tiulo {
+  font-size: 20px;
+}
+
+page-almacen-detalle .opcion {
+  background-color: white;
+  font-size: 16px;
+}
+
+page-almacen-detalle .rojo {
+  color: red;
+}
+
+page-almacen-detalle .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+page-almacenes-lista .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-almacenes-lista .text-center {
+  text-align: center;
+}
+
+page-almacenes-lista .gana {
+  max-width: 50%;
+}
+
+page-almacenes-lista .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-almacenes-lista .letra12 {
+  font-size: 12px;
+}
+
+page-almacenes-lista .row {
+  margin-bottom: 20px;
+}
+
+page-almacenes-lista .opciones {
+  text-align: center;
+}
+
+page-almacenes-lista .diferencia {
+  color: blue;
+}
+
+page-almacenes-lista .imagenPremio {
+  max-height: 300px;
+}
+
+page-almacenes-lista .opcion {
+  background-color: white;
+  font-size: 20px;
+}
+
+page-almacenes-lista .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+page-detalle-almacen .toolbar-title-md {
+  color: white;
+}
+
+page-detalle-almacen .bar-button-default-md, page-detalle-almacen .bar-button-clear-md-default, page-detalle-almacen .bar-button-md-default {
+  color: white;
+}
+
+page-detalle-almacen .toolbar-background-md {
+  background: #F71515;
+}
+
+page-detalle-almacen .text-center {
+  text-align: center;
+}
+
+page-detalle-almacen .guardar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-almacen .modificar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-almacen .cancelar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: red;
+  width: 52%;
+}
+
+page-detalle-almacen .text-center {
+  text-align: center;
+}
+
+page-detalle-almacen .divFoto {
+  margin-left: 1em;
+}
+
+page-detalle-almacen .agregar {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-left: 94px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+page-detalle-almacen .brochure-poster {
+  max-width: 9%;
+}
+
+page-detalle-almacen .area {
+  max-width: 98%;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-detalle-almacen .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-almacen .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-almacen .guardar, page-detalle-almacen .actualizar, page-detalle-almacen .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-detalle-almacen .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-almacen .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-almacen .guardar, page-detalle-almacen .actualizar, page-detalle-almacen .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-detalle-almacen .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-almacen .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-almacen .guardar, page-detalle-almacen .actualizar, page-detalle-almacen .cancelar {
+    font-size: 25px;
+  }
+}
+
+page-detalle-clientes .toolbar-title-md {
+  color: white;
+}
+
+page-detalle-clientes .bar-button-default-md, page-detalle-clientes .bar-button-clear-md-default, page-detalle-clientes .bar-button-md-default {
+  color: white;
+}
+
+page-detalle-clientes .toolbar-background-md {
+  background: #F71515;
+}
+
+page-detalle-clientes .text-center {
+  text-align: center;
+}
+
+page-detalle-clientes .guardar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-clientes .modificar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-clientes .cancelar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: red;
+  width: 52%;
+}
+
+page-detalle-clientes .text-center {
+  text-align: center;
+}
+
+page-detalle-clientes .divFoto {
+  margin-left: 1em;
+}
+
+page-detalle-clientes .area {
+  max-width: 98%;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-detalle-clientes .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-clientes .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-clientes .guardar, page-detalle-clientes .actualizar, page-detalle-clientes .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-detalle-clientes .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-clientes .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-clientes .guardar, page-detalle-clientes .actualizar, page-detalle-clientes .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-detalle-clientes .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-clientes .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-clientes .guardar, page-detalle-clientes .actualizar, page-detalle-clientes .cancelar {
+    font-size: 25px;
+  }
+}
+
+page-detalle-eventos .toolbar-title-md {
+  color: white;
+}
+
+page-detalle-eventos .bar-button-default-md, page-detalle-eventos .bar-button-clear-md-default, page-detalle-eventos .bar-button-md-default {
+  color: white;
+}
+
+page-detalle-eventos .toolbar-background-md {
+  background: #F71515;
+}
+
+page-detalle-eventos .text-center {
+  text-align: center;
+}
+
+page-detalle-eventos .guardar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-eventos .modificar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-eventos .cancelar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: red;
+  width: 52%;
+}
+
+page-detalle-eventos .text-center {
+  text-align: center;
+}
+
+page-detalle-eventos .divFoto {
+  margin-left: 1em;
+}
+
+page-detalle-eventos .area {
+  max-width: 98%;
+}
+
+page-detalle-eventos .label {
+  margin-top: 22px;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-detalle-eventos .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-eventos .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-eventos .guardar, page-detalle-eventos .actualizar, page-detalle-eventos .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-detalle-eventos .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-eventos .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-eventos .guardar, page-detalle-eventos .actualizar, page-detalle-eventos .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-detalle-eventos .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-eventos .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-eventos .guardar, page-detalle-eventos .actualizar, page-detalle-eventos .cancelar {
+    font-size: 25px;
+  }
+}
+
 page-detalle-factura .toolbar-title-md {
   color: white;
 }
@@ -19954,6 +20326,203 @@ page-detalle-factura .toolbar-background-md {
 
 page-detalle-factura .text-center {
   text-align: center;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-detalle-factura .titulo {
+    margin-left: -21px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-detalle-factura .titulo {
+    margin-left: -21px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-detalle-factura .titulo {
+    margin-left: -21px;
+  }
+}
+
+page-detalle-factura-cliente .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-detalle-factura-cliente .text-center {
+  text-align: center;
+}
+
+page-detalle-factura-cliente .gana {
+  max-width: 50%;
+}
+
+page-detalle-factura-cliente .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-detalle-factura-cliente .letra12 {
+  font-size: 12px;
+}
+
+page-detalle-factura-cliente .row {
+  margin-bottom: 20px;
+}
+
+page-detalle-factura-cliente .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+@media (min-width: 767px) {
+  page-detalle-factura-cliente .imagenFactura {
+    max-width: 500px;
+  }
+}
+
+page-detalle-premios .toolbar-title-md {
+  color: white;
+}
+
+page-detalle-premios .bar-button-default-md, page-detalle-premios .bar-button-clear-md-default, page-detalle-premios .bar-button-md-default {
+  color: white;
+}
+
+page-detalle-premios .toolbar-background-md {
+  background: #F71515;
+}
+
+page-detalle-premios .text-center {
+  text-align: center;
+}
+
+page-detalle-premios .guardar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-premios .modificar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: yellow;
+  width: 52%;
+}
+
+page-detalle-premios .cancelar {
+  font-size: 35px;
+  margin-top: 1em;
+  background-color: red;
+  width: 52%;
+}
+
+page-detalle-premios .text-center {
+  text-align: center;
+}
+
+page-detalle-premios .divFoto {
+  margin-left: 1em;
+}
+
+page-detalle-premios .area {
+  max-width: 98%;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-detalle-premios .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-premios .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-premios .guardar, page-detalle-premios .actualizar, page-detalle-premios .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-detalle-premios .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-premios .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-premios .guardar, page-detalle-premios .actualizar, page-detalle-premios .cancelar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-detalle-premios .titulo {
+    margin-left: -21px;
+  }
+  page-detalle-premios .agregar {
+    margin-top: 12px;
+  }
+  page-detalle-premios .guardar, page-detalle-premios .actualizar, page-detalle-premios .cancelar {
+    font-size: 25px;
+  }
+}
+
+page-eventos .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-eventos .text-center {
+  text-align: center;
+}
+
+page-eventos .gana {
+  max-width: 50%;
+}
+
+page-eventos .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-eventos .letra12 {
+  font-size: 12px;
+}
+
+page-eventos .row {
+  margin-bottom: 20px;
+}
+
+page-eventos .opciones {
+  text-align: center;
+}
+
+page-eventos .diferencia {
+  color: blue;
+}
+
+page-eventos .imagenPremio {
+  max-height: 300px;
+}
+
+page-eventos .opcion {
+  background-color: white;
+  font-size: 20px;
+}
+
+page-eventos .rojo {
+  color: red;
+}
+
+page-eventos .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+@media (min-width: 767px) {
+  page-eventos .ancho {
+    max-width: 1080px;
+  }
+  page-eventos .imagenPremio {
+    max-width: 500px;
+  }
 }
 
 page-facturas-aprobadas .toolbar-title-md {
@@ -20188,7 +20757,8 @@ page-home-cliente .camara {
 }
 
 page-home-cliente .letra12 {
-  font-size: 12px;
+  font-size: 15px;
+  margin-right: 50px;
 }
 
 page-home-cliente .row {
@@ -20201,6 +20771,12 @@ page-home-cliente .swiper-pagination-bullet-active {
 
 page-home-cliente .logoEvento {
   margin-bottom: 10px;
+  border-radius: 5%;
+  width: 100px;
+}
+
+page-home-cliente .divFoto {
+  display: none;
 }
 
 @media (min-width: 767px) {
@@ -20212,6 +20788,263 @@ page-home-cliente .logoEvento {
   }
   page-home-cliente .mobile {
     display: none;
+  }
+  page-home-cliente .divFoto {
+    display: inline;
+  }
+}
+
+page-lista-almacenes .toolbar-title-md {
+  color: white;
+}
+
+page-lista-almacenes .bar-button-default-md, page-lista-almacenes .bar-button-clear-md-default, page-lista-almacenes .bar-button-md-default {
+  color: white;
+}
+
+page-lista-almacenes .toolbar-background-md {
+  background: #F71515;
+}
+
+page-lista-almacenes .text-center {
+  text-align: center;
+}
+
+page-lista-almacenes .izq {
+  float: right;
+}
+
+page-lista-almacenes #new {
+  color: white;
+  background-color: #f71515;
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-lista-almacenes .tab {
+    margin-left: 0em;
+    font-size: 18px;
+  }
+  page-lista-almacenes .adminVal {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-lista-almacenes .lista {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+  page-lista-almacenes .boton {
+    font-size: 33px;
+  }
+  page-lista-almacenes .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-lista-almacenes .admin {
+    display: none;
+  }
+  page-lista-almacenes .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+page-lista-clientes .toolbar-title-md {
+  color: white;
+}
+
+page-lista-clientes .bar-button-default-md, page-lista-clientes .bar-button-clear-md-default, page-lista-clientes .bar-button-md-default {
+  color: white;
+}
+
+page-lista-clientes .toolbar-background-md {
+  background: #F71515;
+}
+
+page-lista-clientes .text-center {
+  text-align: center;
+}
+
+page-lista-clientes .izq {
+  float: right;
+}
+
+page-lista-clientes #new {
+  color: white;
+  background-color: #f71515;
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-lista-clientes .tab {
+    margin-left: 0em;
+    font-size: 18px;
+  }
+  page-lista-clientes .adminVal {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-lista-clientes .lista {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+  page-lista-clientes .boton {
+    font-size: 33px;
+  }
+  page-lista-clientes .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-lista-clientes .admin {
+    display: none;
+  }
+  page-lista-clientes .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+page-lista-eventos .toolbar-title-md {
+  color: white;
+}
+
+page-lista-eventos .bar-button-default-md, page-lista-eventos .bar-button-clear-md-default, page-lista-eventos .bar-button-md-default {
+  color: white;
+}
+
+page-lista-eventos .toolbar-background-md {
+  background: #F71515;
+}
+
+page-lista-eventos .text-center {
+  text-align: center;
+}
+
+page-lista-eventos .izq {
+  float: right;
+}
+
+page-lista-eventos #new {
+  color: white;
+  background-color: #f71515;
+  font-size: 2rem;
+}
+
+page-lista-eventos .imgEvento {
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-lista-eventos .tab {
+    margin-left: 0em;
+    font-size: 18px;
+  }
+  page-lista-eventos .adminVal {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-lista-eventos .lista {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+  page-lista-eventos .boton {
+    font-size: 33px;
+  }
+  page-lista-eventos .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-lista-eventos .admin {
+    display: none;
+  }
+  page-lista-eventos .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+page-lista-premios .toolbar-title-md {
+  color: white;
+}
+
+page-lista-premios .bar-button-default-md, page-lista-premios .bar-button-clear-md-default, page-lista-premios .bar-button-md-default {
+  color: white;
+}
+
+page-lista-premios .toolbar-background-md {
+  background: #F71515;
+}
+
+page-lista-premios .text-center {
+  text-align: center;
+}
+
+page-lista-premios .izq {
+  float: right;
+}
+
+page-lista-premios #new {
+  color: white;
+  background-color: #f71515;
+  font-size: 2rem;
+}
+
+page-lista-premios .imgPremio {
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  page-lista-premios .tab {
+    margin-left: 0em;
+    font-size: 18px;
+  }
+  page-lista-premios .adminVal {
+    display: none;
+  }
+  page-lista-premios .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 490px) and (min-width: 340px) {
+  page-lista-premios .lista {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+  page-lista-premios .boton {
+    font-size: 33px;
+  }
+  page-lista-premios .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px) {
+  page-lista-premios .admin {
+    display: none;
+  }
+  page-lista-premios .titulo {
+    margin-left: -27px;
+    margin-top: 12px;
   }
 }
 
@@ -20249,6 +21082,153 @@ page-mis-facturas .toolbar-background-md {
 
 page-mis-facturas .text-center {
   text-align: center;
+}
+
+page-mis-premios .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-mis-premios .text-center {
+  text-align: center;
+}
+
+page-mis-premios .gana {
+  max-width: 50%;
+}
+
+page-mis-premios .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-mis-premios .letra12 {
+  font-size: 12px;
+}
+
+page-mis-premios .row {
+  margin-bottom: 20px;
+}
+
+page-mis-premios .opciones {
+  text-align: center;
+}
+
+page-mis-premios .diferencia {
+  color: blue;
+}
+
+page-mis-premios .imagenPremio {
+  max-height: 300px;
+}
+
+page-mis-premios .opcion {
+  background-color: white;
+  font-size: 20px;
+}
+
+page-mis-premios .desc {
+  overflow: scroll;
+}
+
+page-mis-premios .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+@media (min-width: 767px) {
+  page-mis-premios .ancho {
+    max-width: 1080px;
+  }
+  page-mis-premios .imagenPremio {
+    max-width: 500px;
+  }
+}
+
+page-perfil .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-perfil .text-center {
+  text-align: center;
+}
+
+page-perfil .gana {
+  max-width: 50%;
+}
+
+page-perfil .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-perfil .letra12 {
+  font-size: 12px;
+}
+
+page-perfil .row {
+  margin-bottom: 20px;
+}
+
+page-perfil .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+page-premios .toolbar-background-md {
+  background: #f7ef36;
+}
+
+page-premios .text-center {
+  text-align: center;
+}
+
+page-premios .gana {
+  max-width: 50%;
+}
+
+page-premios .camara {
+  background-color: red;
+  border-radius: 25em;
+}
+
+page-premios .letra12 {
+  font-size: 12px;
+}
+
+page-premios .row {
+  margin-bottom: 20px;
+}
+
+page-premios .opciones {
+  text-align: center;
+}
+
+page-premios .diferencia {
+  color: blue;
+}
+
+page-premios .imagenPremio {
+  max-height: 300px;
+}
+
+page-premios .opcion {
+  background-color: white;
+  font-size: 20px;
+}
+
+page-premios .desc {
+  overflow: scroll;
+}
+
+page-premios .swiper-pagination-bullet-active {
+  background: #f7ef36;
+}
+
+@media (min-width: 767px) {
+  page-premios .ancho {
+    max-width: 1080px;
+  }
+  page-premios .imagenPremio {
+    max-width: 500px;
+  }
 }
 
 page-subir-factura .toolbar-background-md {
